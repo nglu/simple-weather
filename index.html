@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simply Weather</title>
+
+    <!-- Fonts -->
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="css/main.css">
+    <!-- Script -->
+    <script src="scripts/index.js" defer></script>
+
+
+</head>
+<body>
+    <header>
+        <section class="unit">
+            <label for="celcius">°C</label>
+            <input type="radio" id="celcius" name="celcius">
+            <!-- Decorative button for switching unit  -->
+            <!-- When clicked, "checked" will be changed -->
+            <button class="unit_toggle"></button>
+            <label for="fahrenheit">°F</label>
+            <input type="radio" id="fahrenheit" name="fahrenheit" checked>
+        </section>
+    </header>
+    <main>
+        <h1 class="main_title">Latest weather at [insert location]</h1>
+        <section class="current_weather">
+            <div class="temperature">
+                <h2>Temperature value here, doesn't really need a "Temperature" title</h2>
+                <p>Description (sunny, cloudy, rain)</p>
+                <p>High value</p>
+                <p>Low value</p>
+            </div>
+            <div class="wind">
+                <h2>Wind</h2>
+                <p>Insert wind value</p>
+                <div class="wind_direction">
+                    <p class="sr_only">45deg</p>
+                    <div class="wind_arrow"></div>
+                </div>
+            </div>
+            <div class="humidity">
+                <h2>Humidity</h2>
+                <p>Insert humidity value</p>
+            </div>
+        </section>
+
+        <section class="next_seven_days">
+            <div class="next_day">
+                <h3>Mon</h3>
+                <p>Oct 25</p>
+                <p>High value</p>
+                <p>Low value</p>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
